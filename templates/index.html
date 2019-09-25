@@ -1,0 +1,12 @@
+hello<br><br>
+
+{{ jumbble_word }} <br><br>
+
+<form action="answer" method="POST">
+    {% csrf_token %}
+    <input type="text" name="answer" placeholder="Enter your answer here">
+    <input type="submit" value="Submit">
+</form>
+
+<br><br>
+{{ message }}
